@@ -20,7 +20,7 @@ const NonPrimitiveState = () => {
 
     const [noteList, setNoteList] = useState([]);
     const [form, setForm] = useState({});
-    const noteRef = useRef();
+    const noteRef = useRef('abc');
 
     const _onChangeText_Note = (text) => {
         noteRef.current = text;
