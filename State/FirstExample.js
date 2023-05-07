@@ -31,6 +31,10 @@ const FirstExample = () => {
         else {
             setColor('lightgreen');
         }
+
+        setColor(prev => {
+            return prev === 'lightgreen' ? 'lightblue' : 'lightgreen';
+        })
     }
 
     return (

@@ -1,3 +1,6 @@
+import ProductList from "./Hooks/ProductList";
+import SubscriptionExample from "./Hooks/SubscriptionExample";
+import UseEffectExample from "./Hooks/UseEffectExample";
 import FirstExample from "./State/FirstExample";
 import MultipleState from "./State/MultipleState";
 import NonPrimitiveState from "./State/NonPrimitiveState";
@@ -7,8 +10,6 @@ import PropsMemoizationExample from "./State/PropsMemoizationExample";
 
 export default App = () => {
     return (
-        <>
-            <PropsMemoizationExample />
-        </>
+        <ProductList />
     );
 }
