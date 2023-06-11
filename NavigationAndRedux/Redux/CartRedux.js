@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createSelector } from '@reduxjs/toolkit';
 
 // Örnek action
 const action = {
@@ -52,3 +52,15 @@ export const cartSlice = createSlice({
         }
     },
 });
+
+export const cartSelectors = {
+    casd: (state) => {
+        const cartData = state[cartSlice.name];
+        return Object.values(cartData);
+    },
+    cartProductList: createSelector([
+        (state) => state[cartSlice.name],
+    ], (cartData) => {
+        return Object.values(cartData);
+    }),
+};
