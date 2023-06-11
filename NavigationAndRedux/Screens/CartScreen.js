@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Text, View } from "react-native";
 
-const AllProductListScreen = () => {
+const CartScreen = () => {
     console.log('rendering AllProductListScreen');
 
     useEffect(() => {
@@ -14,9 +14,9 @@ const AllProductListScreen = () => {
 
     return (
         <View>
-            <Text>AllProductListScreen</Text>
+            <Text>CartScreen</Text>
         </View>
     );
 }
 
-export default AllProductListScreen;
+export default CartScreen;

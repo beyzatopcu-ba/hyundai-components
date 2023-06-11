@@ -1,6 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import CategoryListScreen from '../Screens/CategoryListScreen';
-import AllProductListScreen from '../Screens/AllProductListScreen';
+import CartScreen from '../Screens/CartScreen';
 import { measure } from '../../Metrics';
 import { Text } from 'react-native';
 import CategoryStackNavigator from './CategoryStackNavigator';
@@ -42,10 +42,10 @@ const MainTabNavigator = () => {
                  /> 
             {/* Tüm ürünler */}
             <Tabs.Screen
-                name='AllProducts'
-                component={AllProductListScreen}
+                name='CartScreen'
+                component={CartScreen}
                 options={{
-                    title: 'Tüm Ürünler',
+                    title: 'Sepetim',
                     ...headerOptions,
                 }} /> 
         </Tabs.Navigator>
